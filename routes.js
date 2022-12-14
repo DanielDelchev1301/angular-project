@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-const homeController = require('./controllers/homeController');
+const parfumeController = require('./controllers/parfumeController');
 
-router.use('/', homeController);
+router.use('/parfume', parfumeController);
 
 module.exports = router;

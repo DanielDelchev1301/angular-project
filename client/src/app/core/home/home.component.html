@@ -4,11 +4,20 @@
     <section class='most-watched-section'>
         <h2 class='most-watched-title'>Most watched</h2>
 
-        <!-- if most-watched -->
-            <!-- <CardBox movies={mostWatched}/> -->
-            <div class="not-found">
-                <h2>Nothing found.</h2>
-            </div>
+            <ng-container *ngIf="parfumeList">
+                <article *ngFor="let parfume of parfumeList" class='most-watched-article' >
+                    <div class="card-box">
+                        <img src={{parfume.imageUrl}} alt={{parfume.title}} />
+                        <h2>{{parfume.title}}</h2>
+                        <button><a routerLink='/details/{{parfume._id}}'>Details</a></button>
+                    </div>
+                </article>
+            </ng-container>
+            <ng-container *ngIf="!parfumeList">                
+                <div class="not-found">
+                    <h2>Nothing found.</h2>
+                </div>
+            </ng-container>
         
     </section>
 </div>
