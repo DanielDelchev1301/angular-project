@@ -1,0 +1,39 @@
+<div class="form-container">
+    <form class="form" onSubmit={submitHandler}>
+        <h2 class="form-title">Register</h2>
+
+        <label class="labels" htmlFor="username">Username:</label>
+        <input
+            class="inputs"
+            type="text"
+            id="username"
+            name="username"
+            value={values.username}
+            onChange={changeHandler}
+        />
+
+        <label class="labels" htmlFor="password">Password:</label>
+        <input
+            class="inputs"
+            type="password"
+            id="password"
+            name="password"
+            value={values.password}
+            onChange={changeHandler}
+        />
+
+        <label class="labels" htmlFor="confirmPassword">Confirm Password:</label>
+        <input
+            class="inputs"
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            value={values.confirmPassword}
+            onChange={changeHandler}
+        />
+
+        <input class="form-button" type="submit" value="Submit" />
+
+        <p class="have-acc">You have an account? <a routerLink='/login'>Login</a></p>
+    </form>
+</div>
