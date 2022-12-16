@@ -17,6 +17,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "angular-slickgrid",
+              "stream",
+              "url",
+              "path",
+              "util",
+              "http",
+              "crypto",
+              "zlib",
+              "assert"
+            ],
             "outputPath": "dist/client",
             "index": "src/index.html",
             "main": "src/main.ts",

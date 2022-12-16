@@ -1,35 +1,29 @@
 <div class="form-container">
-    <form class="form" onSubmit={submitHandler}>
+    <form class="form">
         <h2 class="form-title">Register</h2>
 
-        <label class="labels" htmlFor="username">Username:</label>
+        <label class="labels" for="username">Username:</label>
         <input
             class="inputs"
             type="text"
             id="username"
             name="username"
-            value={values.username}
-            onChange={changeHandler}
         />
 
-        <label class="labels" htmlFor="password">Password:</label>
+        <label class="labels" for="password">Password:</label>
         <input
             class="inputs"
             type="password"
             id="password"
             name="password"
-            value={values.password}
-            onChange={changeHandler}
         />
 
-        <label class="labels" htmlFor="confirmPassword">Confirm Password:</label>
+        <label class="labels" for="confirmPassword">Confirm Password:</label>
         <input
             class="inputs"
             type="password"
             id="confirmPassword"
             name="confirmPassword"
-            value={values.confirmPassword}
-            onChange={changeHandler}
         />
 
         <input class="form-button" type="submit" value="Submit" />

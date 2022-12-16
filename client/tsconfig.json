@@ -2,6 +2,16 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "stream": [ "./node_modules/stream-browserify" ],
+      "url": [ "./node_modules/url" ],
+      "path": [ "./node_modules/path-browserify" ],
+      "util": [ "./node_modules/util" ],
+      "http": [ "./node_modules/stream-http" ],
+      "crypto": [ "./node_modules/crypto-browserify" ],
+      "zlib": [ "./node_modules/browserify-zlib" ],
+      "assert": [ "./node_modules/assert" ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
